@@ -1,3 +1,3 @@
 # FDS-Project-CMSE830-
 
-http://localhost:8502/
+https://fds-project-cmse830-credit-card-default-prediction-b9v63m8mqgs.streamlit.app/
