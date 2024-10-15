@@ -30,15 +30,28 @@ data.rename(columns={'PAY_0': 'PAY_1'}, inplace=True)
 #set page content
 if page == "🏡Home":
     st.title('Beyond the Client')
-    st.header("Enhancing Credit Card Default Prediction with Behavioral Analysis and Macroeconomic Data")
+    st.subheader("Enhancing Credit Card Default Prediction with Behavioral Analysis and Macroeconomic Data")
     st.write("")
     st.write("")
     st.write("The Bank of Taiwan is facing losses due to increasing credit card defaults. This dashboard provides a means to identify factors associated with credit defaults and help identify potential faulty clients to curb losses.")
-    st.write("")
     st.write("*PS. Imagine you are an employee of the Bank of Taiwan in Sep 2005. Profits are low, customers are defaulting, your boss is angry, and he wants the answer to 'WHY' asap.*")
+    st.write("")
+    total_customers = len(data)
+    total_defaults = len(data[data['Default'] == 'yes'])
+    money_lost = data['BILL_AMT1'].sum()
+    perc = (total_defaults / total_customers)*100
+    col1, col2, col3, col4 = st.columns([0.5, 0.5, 0.5, 1])
+    with col1:
+        st.metric("Total Customers", total_customers)
+    with col2:
+        st.metric("Total Defaults", total_defaults)
+    with col3:
+        st.metric("Default Percentage", f"{perc:,}%")
+    with col4:
+        st.metric("Total Money Lost", f"${money_lost:,}")
 
 elif page == "👪Demographic Data":
-    st.subheader("Defaults in relation to Gender, Relationship Status, Age & Education Level")
+    st.subheader("Defaults in relation to Gender, Relationship Status, Age, & Education Level")
     st.write("")
     st.write("")
     sex_data = filtered_data = data_income[data_income['Demographic'].isin(['Male', 'Female'])]
@@ -58,9 +71,11 @@ elif page == "💳Credit Limit & Balance":
     st.subheader("Defaults in relation to Credit Limit and Monthly Repayment History")
     st.write("")
     st.write("")
-    st.write("**HiPlot Visualization of Payment History**")
-    st.write("KEY: -2:No payment due, -1=Paid duly, 0=Payment delay <1 month, 1=Payment delay of 1 month, 2=Payment delay of 2 months, … , 9=Payment delay of nine months and above")
-    st.write("PAY_1:Repayment status in Sept, PAY_2:Repayment status in August, ... so on")
+    st.write("**Credit Repayment History Snapshot**")
+    st.write("KEY:") 
+    st.write("PAY_1 = Repayment status in Sep, PAY_2 = Repayment status in Aug, ... so on")
+    st.write("-2 = No payment due, -1 = Paid duly, 0 = Payment delay <1 month")
+    st.write("1 = Payment delay of 1 month, 2 = Payment delay of 2 months, ... so on")
     with open('hiplot.html', 'r', encoding='utf-8') as f:
         html_content = f.read()
     components.html(html_content, height=800, scrolling=True)
@@ -72,6 +87,7 @@ elif page == "💳Credit Limit & Balance":
     st.plotly_chart(fig1, use_container_width=True)
     st.write("")
     st.write("")
+    st.write("**Defaults grouped by Amount of Credit Limit**")
     image = Image.open("density_plot.png")
     st.image(image, width=500)
 
