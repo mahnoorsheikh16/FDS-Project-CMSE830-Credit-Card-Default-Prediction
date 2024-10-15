@@ -20,9 +20,9 @@ for _ in range(15):  # Change 10 to the number of empty lines you want
 st.sidebar.write("Find code at: https://github.com/mahnoorsheikh16/FDS-Project-CMSE830-Credit-Card-Default-Prediction")
 
 #import data
-data = pd.read_csv(r"C:\Users\manos\OneDrive\Desktop\MSU\Fall 2024\CMSE 830 Foundations of Data Science\Project\Midterm\UCI_Credit_Card.csv")
-data_macro = pd.read_excel(r"C:\Users\manos\OneDrive\Desktop\MSU\Fall 2024\CMSE 830 Foundations of Data Science\Project\Midterm\data_macro.xlsx")
-data_income = pd.read_excel(r"C:\Users\manos\OneDrive\Desktop\MSU\Fall 2024\CMSE 830 Foundations of Data Science\Project\Midterm\data_income.xlsx")
+data = pd.read_csv("https://raw.githubusercontent.com/mahnoorsheikh16/FDS-Project-CMSE830-Credit-Card-Default-Prediction/refs/heads/main/UCI_Credit_Card.csv")
+data_macro = pd.read_excel("https://raw.githubusercontent.com/mahnoorsheikh16/FDS-Project-CMSE830-Credit-Card-Default-Prediction/main/data_macro.xlsx")
+data_income = pd.read_excel("https://raw.githubusercontent.com/mahnoorsheikh16/FDS-Project-CMSE830-Credit-Card-Default-Prediction/main/data_income.xlsx")
 
 data.rename(columns={'default.payment.next.month': 'Default'}, inplace=True)
 data.rename(columns={'PAY_0': 'PAY_1'}, inplace=True)
