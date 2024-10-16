@@ -94,15 +94,20 @@ Data on labour, income, and inflation for Taiwan in 2005 have been sourced from 
 ## Data Cleaning and Preprocessing:
 To prepare the dataset for model evaluation, I start with variable identification and classification. I first remove unique variables like 'ID' and rename columns for better understanding. The target variable is the binary variable 'Default,' and the explanatory variables have information about customer demographics and payment history. These are 14 quantitative variables with discrete data (integers), i.e. LIMIT_BAL, AGE, BILL_AMT1-6, PAY_AMT1-6, and 10 categorical variables, where EDUCATION and MARRIAGE are nominal; SEX and Default are binary, and PAY_1-6 are ordinal. The macroeconomic and income datasets have continuous numerical data. I further check the unique values of each categorical variable for inconsistencies during data quality assessment and find all labels to match their given data descriptions, except for PAY_1-6 variables. '-2' and '0' instances are undocumented but make up a significant chunk of the data so they cannot be treated as unknowns. Upon inspection of the label order and observations, we can infer '-2' to be no payment due and '0' to represent a payment delay for <1 month (however we cannot be sure).
 
-As part of data cleaning, I started by removing 35 duplicate rows and using the Label Encoder for variables 'MARRIAGE', 'SEX', 'Default' and 'EDUCATION' so their values can be compatible with further analytical techniques. The 'EDUCATION' and 'MARRIAGE' variables had 345 and 54 missing values respectively, which made less than 2% of the dataset. To classify the type of feature missingness, three methods were employed: heatmap, correlation matrix and pair plots:
+As part of data cleaning, I started by removing 35 duplicate rows and using the Label Encoder for variables 'MARRIAGE', 'SEX', 'Default' and 'EDUCATION' so their values can be compatible with further analytical techniques. The 'EDUCATION' and 'MARRIAGE' variables had 345 and 54 missing values respectively, which made less than 2% of the dataset. To classify the type of feature missingness, three methods were employed: heatmap, correlation matrix and pair plots (the interactive elements can be used through code):
 ![missing_heatmap](https://github.com/user-attachments/assets/5affd66f-8fec-4107-a7b6-908e32fa83c7)
 ![missingcor_heatmap](https://github.com/user-attachments/assets/98a7bc03-6950-49bd-ad18-8b8b36fbca23)
+#### EDUCATION Pairplot:
 ![education_pairplot](https://github.com/user-attachments/assets/a540aed2-70fa-40ed-bc87-411c0a91c118)
+#### MARRIAGE Pairplot
 ![marriage_pairplot](https://github.com/user-attachments/assets/135b64d0-79df-4281-b837-b524380fd722)
+No significant correlation is found between between the variables and missing data so I classify it as MCAR missingness of general pattern (most complex to handle). 
+Since missing data is an insignificant percentage of the overall data, we could safely drop columns. However, I have also employed KNN imputation to not lose any significant information. The reason for choosing KNN is that other techniques like MICE might be overkill here since it’s best suited for scenarios with intricate relationships and more extensive missing data patterns, and since categorical features have missing data, they cannot be imputed using numerical methods.
 
-Imputation
+To verify changes to the distribution of data, I visualize using count plots.  
 ![data_drop](https://github.com/user-attachments/assets/e5961f23-1115-4619-8b81-f4dc40848249)
 ![data_imputation](https://github.com/user-attachments/assets/eb80082f-a82f-43c1-b66c-6061ebbd2917)
+The distributions remain identical after both methods so no significant loss is recorded. I decide to move forward with imputed data so there are more values to work with and fix integer data types for features.
 
 Scaling
 ![scaleddata_billamt](https://github.com/user-attachments/assets/d487a29d-bd16-486e-869a-21ba3f6bc805)
