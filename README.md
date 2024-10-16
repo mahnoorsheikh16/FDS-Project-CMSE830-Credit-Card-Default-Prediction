@@ -5,10 +5,11 @@ Access the [streamlit](https://fds-project-cmse830-credit-card-default-predictio
 
 ## Table of Contents:
 1. [Introduction](#introduction)
-2. [Datasets](#datasets)
-3. [Data Cleaning and Preprocessing](#data-cleaning-and-preprocessing)
-4. [Exploratory Data Analysis](https://fds-project-cmse830-credit-card-default-prediction-r2f68jop9pe.streamlit.app/)
-5. [Future Work](#future-work)
+2. [Environment](#environment)
+3. [Datasets](#datasets)
+4. [Data Cleaning and Preprocessing](#data-cleaning-and-preprocessing)
+5. [Exploratory Data Analysis](https://fds-project-cmse830-credit-card-default-prediction-r2f68jop9pe.streamlit.app/)
+6. [Future Work](#future-work)
 
 ## Introduction:
 Credit risk refers to the cardholder's inability to make required payments on their credit card debt, leading to 'credit default.' This poses a major concern for financial institutions, as defaults can result in significant losses and, in severe cases, even bankruptcy. Conducting thorough evaluations and verifying a borrower's ability to repay can help prevent the over-issuance of credit cards to unqualified applicants, thereby minimizing credit risk.
