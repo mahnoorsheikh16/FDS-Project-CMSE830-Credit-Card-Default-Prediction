@@ -48,7 +48,8 @@ if page == "🏡Home":
     with col3:
         st.metric("**Default Percentage**", f"{perc:,}%")
     with col4:
-        st.metric("**Total NTD Lost**", f"${money_lost:,}")
+        #st.metric("**Total NTD Lost**", f"${money_lost:,}")
+        st.markdown(f"<p style='font-size:24px; color:red;'><strong>Total NTD Lost:</strong> ${money_lost:,}</p>", unsafe_allow_html=True)
 
 elif page == "👪Demographic Data":
     st.subheader("Defaults in relation to Gender, Relationship Status, Age, & Education Level")
