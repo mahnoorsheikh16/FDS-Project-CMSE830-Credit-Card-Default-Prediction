@@ -34,7 +34,7 @@ if page == "🏡Home":
     st.write("")
     st.write("")
     st.write("The Bank of Taiwan is facing losses due to increasing credit card defaults. This dashboard provides a means to identify factors associated with credit defaults and help identify potential faulty clients to curb losses.")
-    st.write("*PS. Imagine you are an employee of the Bank of Taiwan in Sep 2005. Profits are low, customers are defaulting, your boss is angry, and he wants the answer to 'WHY' asap.*")
+    st.write("")
     st.write("")
     total_customers = len(data)
     total_defaults = len(data[data['Default'] == 'yes'])
