@@ -11,7 +11,9 @@ Access the [streamlit](https://fds-project-cmse830-credit-card-default-predictio
 5. [Future Work](#future-work)
 
 ## Introduction:
+Credit Risk is the inability of the receiver to pay back the loan at the designated time which was decided by the lender and the borrower during the loan agreement. This causes major concerns among the financial institutes as it can result in “credit defaulting”, which can prove to be drastic to the lending party, as it may lead to losses and even bankruptcy. A thorough evaluation and verification of the ability of a borrower to repay their loan in the decided time period can result in minimized credit risk and prove beneficial for financial institutes.
 
+Machine Learning models can be deployed to predict risky customers and minimise lenders' losses. By using algorithms to study the behaviour and demographics of previous customers, we can apply the findings to customers in the future and differentiate between risky and non-risky customers, resulting in efficient loan lending.
 
 ## Datasets:
 **I. Default of Credit Card Clients**
