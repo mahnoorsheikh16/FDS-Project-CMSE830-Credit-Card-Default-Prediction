@@ -230,8 +230,8 @@ elif page == "🖥️Decoding the Algorithm":
         st.markdown("""
         The plot illustrates the distribution of classes in the dataset. 
         The majority class "not default" has 77% samples, whereas, the minority class "default" has 22% samples. Data is highly imbalanced. 
-        Addressing this imbalance is vital to improve model performance. The best method would be to undersample majority class using one-class classification. As we have not 
-        studied it yet, we will apply SMOTE for demonstration purposes.
+        Addressing this imbalance is vital to improve model performance. The best method would be to undersample the majority class using one-class classification. As we have not 
+        studied it yet, I apply SMOTE for demonstration purposes.
         """)
     st.write("")
     st.write("")
