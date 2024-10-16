@@ -93,5 +93,7 @@ Data on labour, income, and inflation for Taiwan in 2005 have been sourced from 
 
 ## Data Cleaning and Preprocessing:
 
+![missing heatmap](https://github.com/user-attachments/assets/c728f8d7-3e8d-4ad0-bb2e-d720b4e1de41)
+[View missingcorrelation_heatmap.json](./missingcorrelation_heatmap.json)
 
 ## Future Work:
