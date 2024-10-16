@@ -42,13 +42,13 @@ if page == "🏡Home":
     perc = (total_defaults / total_customers)*100
     col1, col2, col3, col4 = st.columns([0.5, 0.5, 0.5, 1])
     with col1:
-        st.metric("Total Customers", total_customers)
+        st.metric("**Total Customers**", total_customers)
     with col2:
-        st.metric("Total Defaults", total_defaults)
+        st.metric("**Total Defaults**", total_defaults)
     with col3:
-        st.metric("Default Percentage", f"{perc:,}%")
+        st.metric("**Default Percentage**", f"{perc:,}%")
     with col4:
-        st.metric("Total NTD Lost", f"${money_lost:,}")
+        st.metric("**Total NTD Lost**", f"${money_lost:,}")
 
 elif page == "👪Demographic Data":
     st.subheader("Defaults in relation to Gender, Relationship Status, Age, & Education Level")
