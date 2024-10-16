@@ -49,7 +49,15 @@ if page == "🏡Home":
         st.metric("**Default Percentage**", f"{perc:,}%")
     with col4:
         #st.metric("**Total NTD Lost**", f"${money_lost:,}")
-        st.markdown(f"<p style='font-size:24px; color:red;'><strong>Total NTD Lost:</strong> ${money_lost:,}</p>", unsafe_allow_html=True)
+        st.markdown(
+            f"""
+            <div style='text-align: center;'>
+                <p style='font-size: 16px; font-weight: bold;'>Total NTD Lost</p>
+                <p style='font-size: 24px; color: red; font-weight: bold;'>${money_lost:,}</p>
+            </div>
+            """, 
+            unsafe_allow_html=True
+        )
 
 elif page == "👪Demographic Data":
     st.subheader("Defaults in relation to Gender, Relationship Status, Age, & Education Level")
