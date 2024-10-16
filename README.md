@@ -8,7 +8,7 @@ Access the [streamlit](https://fds-project-cmse830-credit-card-default-predictio
 2. [Environment](#environment)
 3. [Datasets](#datasets)
 4. [Data Cleaning and Preprocessing](#data-cleaning-and-preprocessing)
-5. [Exploratory Data Analysis](https://fds-project-cmse830-credit-card-default-prediction-r2f68jop9pe.streamlit.app/)
+5. [Exploratory Data Analysis](#exploratory-data-analysis)
 6. [Future Work](#future-work)
 
 ## Introduction:
@@ -125,7 +125,7 @@ The data is found to follow an identical relationship after scaling.
 Finally, the credit card default dataset is combined with the macroeconomic and income datasets using default counts. This is used to further explore the relationships between variables using exploratory data analysis.
 
 ## Exploratory Data Analysis
-Head over to the [streamlit](https://fds-project-cmse830-credit-card-default-prediction-r2f68jop9pe.streamlit.app/) web app to explore insights gauged from the datasets and review the techniques used to handle class imbalance.
+Visit the [streamlit](https://fds-project-cmse830-credit-card-default-prediction-r2f68jop9pe.streamlit.app/) to explore the insights derived from the dataset. The app features summaries of the T-test and Chi-Square test, which identify significant variables, as well as methods like SMOTE used to manage class imbalance.
 
 ## Future Work:
 This project is a work in progress. The goal is to apply these insights to different machine learning models to predict whether a customer will default on their next credit card payment. I also plan to use regression to explore how changes in specific variables affect the probability of default. Scaling the data will take this analysis further by uncovering true relationships without the noise, especially since the dataset contains many outliers.
