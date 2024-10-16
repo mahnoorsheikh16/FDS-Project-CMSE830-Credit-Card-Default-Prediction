@@ -92,6 +92,11 @@ Data on labour, income, and inflation for Taiwan in 2005 have been sourced from 
 `Avg Income Level`: Disposable income of employees (including those having: (i) full-time, part-time, or another payroll (ii) entrepreneurial income (iii) property income (iv) imputed rent income (v) current transfer receipts)
 
 ## Data Cleaning and Preprocessing:
+To prepare the dataset for model evaluation, I start with variable identification and classification. I first remove unique variables like 'ID' and rename columns for better understanding. The target variable is the binary variable 'Default,' and the explanatory variables have information about customer demographics and payment history. These are 14 quantitative variables with discrete data (integers), i.e. LIMIT_BAL, AGE, BILL_AMT1-6, PAY_AMT1-6, and 10 categorical variables, where EDUCATION and MARRIAGE are nominal; SEX and Default are binary, and PAY_1-6 are ordinal. The macroeconomic and income datasets have continuous numerical data. I further check the unique values of each categorical variable for inconsistencies during data quality assessment and find all labels to match their given data descriptions, except for PAY_1-6 variables. '-2' and '0' instances are undocumented but make up a significant chunk of the data so they cannot be treated as unknowns.
+
+During data cleaning, 
+
+Upon inspection of the order and row data, we can infer -2=no payment due and 0=payment delay for <1 month (however we cannot be sure)
 Missing data visualisation
 ![missing_heatmap](https://github.com/user-attachments/assets/5affd66f-8fec-4107-a7b6-908e32fa83c7)
 ![missingcor_heatmap](https://github.com/user-attachments/assets/98a7bc03-6950-49bd-ad18-8b8b36fbca23)
