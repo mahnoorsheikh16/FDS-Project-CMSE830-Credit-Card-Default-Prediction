@@ -15,6 +15,16 @@ Credit risk refers to the cardholder's inability to make required payments on th
 
 Machine learning models can be deployed to identify risky customers and minimise lenders' losses. By using algorithms to study historical transactions and customer demographics, we can apply the findings to future customers, effectively distinguishing between risky and non-risky profiles. This approach leads to more efficient loan lending practices.
 
+## Environment
+The analysis has been conducted in Python and the source code requires the following libraries: `pandas`, `numpy`, `sklearn`, `scipy`, and `imblearn`.
+
+Primary libraries used for visualizations are `matplotlib`, `seaborn`, `plotly`, and `hiplot`.
+
+`streamlit` must be installed to run the `streamlit_code.py` file. Run it using the following command in the terminal:
+```
+streamlit run streamlit_code.py
+```
+
 ## Datasets:
 **I. Default of Credit Card Clients**
 
