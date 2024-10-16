@@ -92,8 +92,19 @@ Data on labour, income, and inflation for Taiwan in 2005 have been sourced from 
 `Avg Income Level`: Disposable income of employees (including those having: (i) full-time, part-time, or another payroll (ii) entrepreneurial income (iii) property income (iv) imputed rent income (v) current transfer receipts)
 
 ## Data Cleaning and Preprocessing:
+Missing data visualisation
+![missing_heatmap](https://github.com/user-attachments/assets/5affd66f-8fec-4107-a7b6-908e32fa83c7)
+![missingcor_heatmap](https://github.com/user-attachments/assets/98a7bc03-6950-49bd-ad18-8b8b36fbca23)
+![education_pairplot](https://github.com/user-attachments/assets/a540aed2-70fa-40ed-bc87-411c0a91c118)
+![marriage_pairplot](https://github.com/user-attachments/assets/135b64d0-79df-4281-b837-b524380fd722)
 
-![missing heatmap](https://github.com/user-attachments/assets/c728f8d7-3e8d-4ad0-bb2e-d720b4e1de41)
-[View missingcorrelation_heatmap.json](./missingcorrelation_heatmap.json)
+Imputation
+![data_drop](https://github.com/user-attachments/assets/e5961f23-1115-4619-8b81-f4dc40848249)
+![data_imputation](https://github.com/user-attachments/assets/eb80082f-a82f-43c1-b66c-6061ebbd2917)
+
+Scaling
+![scaleddata_billamt](https://github.com/user-attachments/assets/d487a29d-bd16-486e-869a-21ba3f6bc805)
+![scaleddata_payamt](https://github.com/user-attachments/assets/d3c7ac1a-fd9b-4c0b-b710-337615bf2856)
+
 
 ## Future Work:
