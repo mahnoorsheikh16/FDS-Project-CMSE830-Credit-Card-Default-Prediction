@@ -17,6 +17,7 @@ Machine Learning models can be deployed to predict risky customers and minimise 
 
 ## Datasets:
 **I. Default of Credit Card Clients**
+
 Dataset contains information on credit card clients in Taiwan from April 2005 to September 2005. It has 30,000 instances across 25 attributes, contains multivariate characteristics, and the attributes have both integer, categorical and real data types. The attribute summary is as follows:
 
 `ID`: ID of each client
@@ -69,6 +70,15 @@ Dataset contains information on credit card clients in Taiwan from April 2005 to
 
 `default payment next month`: Default payment (yes, no)
 
+**II. Macroeconomic Data**
+
+Labour, income and inflation data for the selected period in Taiwan has been taken from [National Statistics Republic of China (Taiwan)](https://eng.stat.gov.tw/cl.aspx?n=2324) and [DGBAS Government Bureau](https://www.dgbas.gov.tw/default.aspx).
+
+`CPI`: Consumer Price Index representing the average change over time in the prices paid by consumers for a representative basket of consumer goods and services
+
+`Unemployment Rate`: Percentage of people in the labour force who are unemployed (includes civilians age 15 & above who were： (i) jobless (ii) available for work (iii) seeking a job or waiting for results after job seeking during the reference week (iv) waiting for a recall after layoff (v) having a job offer but have not started to work)
+
+`Avg Income Level`: Disposable income of employees (including those having: (i) full-time, part-time, or another payroll (ii) entrepreneurial income (iii) property income (iv) imputed rent income (v) current transfer receipts)
 
 ## Data Cleaning and Preprocessing:
 
