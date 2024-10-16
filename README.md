@@ -1,11 +1,10 @@
 # Credit Card Default Prediction
-Classification problem to predict if a customer will default on next month's credit card payment using [UCI dataset](https://archive.ics.uci.edu/dataset/350/default+of+credit+card+clients).
+Classification problem to predict if a customer will default on next month's credit card payment using the [UCI dataset](https://archive.ics.uci.edu/dataset/350/default+of+credit+card+clients).
 
 Access the [streamlit](https://fds-project-cmse830-credit-card-default-prediction-r2f68jop9pe.streamlit.app/) web-app to view the insights drawn from the dataset.
 
-# Datasets:
+## Datasets:
 **I. Default of Credit Card Clients**
-https://archive.ics.uci.edu/dataset/350/default+of+credit+card+clients
 This dataset contains information on credit card clients in Taiwan from April 2005 to September 2005. The dataset has 30,000 instances across 25 attributes, contains multivariate characteristics, and the attributes have both integer, categorical and real data types. The attribute summary is as follows:
 ID: ID of each client
 LIMIT_BAL: Amount of given credit in NT dollars (includes individual and family/supplementary credit
