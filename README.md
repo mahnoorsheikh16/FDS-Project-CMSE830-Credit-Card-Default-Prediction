@@ -1,7 +1,7 @@
 # Credit Card Default Prediction
 Classification problem to predict if a customer will default on next month's credit card payment using [UCI dataset](https://archive.ics.uci.edu/dataset/350/default+of+credit+card+clients).
 
-Access the [streamlit](https://fds-project-cmse830-credit-card-default-prediction-r2f68jop9pe.streamlit.app/) web-app to view the insights drawn from the dataset.
+Access the [streamlit](https://fds-project-cmse830-credit-card-default-prediction-r2f68jop9pe.streamlit.app/) web app to view the insights drawn from the dataset.
 
 ## Table of Contents:
 1. [Introduction](#introduction)
@@ -70,13 +70,13 @@ Dataset contains information on credit card clients in Taiwan from April 2005 to
 
 `default payment next month`: Default payment (yes, no)
 
-**II. Macroeconomic Data**
+**II. Macroeconomic Data for Taiwan**
 
-Labour, income and inflation data for the selected period in Taiwan has been taken from [National Statistics Republic of China (Taiwan)](https://eng.stat.gov.tw/cl.aspx?n=2324) and [DGBAS Government Bureau](https://www.dgbas.gov.tw/default.aspx).
+Data on labour, income, and inflation for Taiwan in 2005 have been sourced from the [National Statistics Republic of China (Taiwan)](https://eng.stat.gov.tw/cl.aspx?n=2324) and [DGBAS Government Bureau](https://www.dgbas.gov.tw/default.aspx).
 
 `CPI`: Consumer Price Index representing the average change over time in the prices paid by consumers for a representative basket of consumer goods and services
 
-`Unemployment Rate`: Percentage of people in the labour force who are unemployed (includes civilians age 15 & above who were： (i) jobless (ii) available for work (iii) seeking a job or waiting for results after job seeking during the reference week (iv) waiting for a recall after layoff (v) having a job offer but have not started to work)
+`Unemployment Rate`: Percentage of people in the labour force who are unemployed (includes civilians age 15 & above who were: (i) jobless (ii) available for work (iii) seeking a job or waiting for results after job seeking during the reference week (iv) waiting for a recall after layoff (v) having a job offer but have not started to work)
 
 `Avg Income Level`: Disposable income of employees (including those having: (i) full-time, part-time, or another payroll (ii) entrepreneurial income (iii) property income (iv) imputed rent income (v) current transfer receipts)
 
