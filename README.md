@@ -122,7 +122,7 @@ To identify outliers in the dataset, I employ the Z-Score method and set the thr
 
 The data is found to follow an identical relationship after scaling.
 
-Lastly, the credit card default dataset is combined with the macroeconomic and income datasets using default counts. This is used to further explore the relationships between variables using exploratory data analysis.
+Finally, the credit card default dataset is combined with the macroeconomic and income datasets using default counts. This is used to further explore the relationships between variables using exploratory data analysis.
 
 ## Exploratory Data Analysis
 Head over to the [streamlit](https://fds-project-cmse830-credit-card-default-prediction-r2f68jop9pe.streamlit.app/) web app to explore insights gauged from the datasets and review the techniques used to handle class imbalance.
