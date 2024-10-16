@@ -1,7 +1,7 @@
 # Credit Card Default Prediction
-Classification problem to predict if a customer will default on next month's credit card payment using [UCI dataset](https://archive.ics.uci.edu/dataset/350/default+of+credit+card+clients).
+This classification problem aims to predict whether a customer will default on next month's credit card payment using a [UCI dataset](https://archive.ics.uci.edu/dataset/350/default+of+credit+card+clients).
 
-Access the [streamlit](https://fds-project-cmse830-credit-card-default-prediction-r2f68jop9pe.streamlit.app/) web app to view the insights drawn from the dataset.
+Access the [streamlit](https://fds-project-cmse830-credit-card-default-prediction-r2f68jop9pe.streamlit.app/) web app to explore the insights derived from the analysis.
 
 ## Table of Contents:
 1. [Introduction](#introduction)
