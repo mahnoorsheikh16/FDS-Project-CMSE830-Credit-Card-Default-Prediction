@@ -3,6 +3,12 @@ Classification problem to predict if a customer will default on next month's cre
 
 Access the [streamlit](https://fds-project-cmse830-credit-card-default-prediction-r2f68jop9pe.streamlit.app/) web-app to view the insights drawn from the dataset.
 
+## Table of Contents:
+1. [Datasets](#datasets)
+2. [Data Cleaning and Preprocessing](#data-cleaning-and-preprocessing)
+3. [Exploratory Data Analysis](https://fds-project-cmse830-credit-card-default-prediction-r2f68jop9pe.streamlit.app/)
+4. [Future Work](#future-work)
+
 ## Datasets:
 **I. Default of Credit Card Clients**
 This dataset contains information on credit card clients in Taiwan from April 2005 to September 2005. The dataset has 30,000 instances across 25 attributes, contains multivariate characteristics, and the attributes have both integer, categorical and real data types. The attribute summary is as follows:
@@ -32,7 +38,7 @@ PAY_AMT5: Amount of previous payment in May, 2005 (NT dollar)
 PAY_AMT6: Amount of previous payment in April, 2005 (NT dollar)
 default payment next month: Default payment (1=yes, 0=no)
 
-#### Methodology:
+## Data Cleaning and Preprocessing:
 
 
-#### Future Work:
+## Future Work:
