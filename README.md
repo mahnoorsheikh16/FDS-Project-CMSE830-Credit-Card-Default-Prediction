@@ -4,10 +4,14 @@ Classification problem to predict if a customer will default on next month's cre
 Access the [streamlit](https://fds-project-cmse830-credit-card-default-prediction-r2f68jop9pe.streamlit.app/) web-app to view the insights drawn from the dataset.
 
 ## Table of Contents:
-1. [Datasets](#datasets)
-2. [Data Cleaning and Preprocessing](#data-cleaning-and-preprocessing)
-3. [Exploratory Data Analysis](https://fds-project-cmse830-credit-card-default-prediction-r2f68jop9pe.streamlit.app/)
-4. [Future Work](#future-work)
+1. [Introduction](#intoduction)
+2. [Datasets](#datasets)
+3. [Data Cleaning and Preprocessing](#data-cleaning-and-preprocessing)
+4. [Exploratory Data Analysis](https://fds-project-cmse830-credit-card-default-prediction-r2f68jop9pe.streamlit.app/)
+5. [Future Work](#future-work)
+
+## Introduction:
+
 
 ## Datasets:
 **I. Default of Credit Card Clients**
